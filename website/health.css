@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#nav-bar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1a0000;
+    height: 60px;
+}
+.logo{
+    width: 15%;
+    height: 50px;
+    margin: 2px;
+
+}
+
+ #logo{
+    height: 50px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.login{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ul{
+    color: whitesmoke;
+    margin: 2px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 80%;
+    list-style-type: none;
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+li::first-letter{
+    font-size: larger;
+}
+
+li:hover{
+    text-decoration: 3px underline skyblue;
+}
+
+@media (max-width:500px) {
+    ul{
+        visibility: hidden;
+        display: none;
+    }
+
+    .logo{
+        width: 100%;
+       
+    }
+}
+
+/**********************End of navbar**********************************/
+
+
+
+
+/**************************End of navbar  2****************************************/
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    /* position: absolute; */
+    top: 0;
+    /* right: 25px; */
+    float: right;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .open-btn {
+    position: fixed;
+    top: 5px;
+    left: 1px;
+    height: 40px;
+    min-width: 100px;
+    display: none;
+ float: right;
+  }
+  
